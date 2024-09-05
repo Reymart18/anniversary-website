@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Torch</title>
+    <link rel="icon" type="image/x-icon" href="cvsu-logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="anniv.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="row">
+        <div class="col-12">
+          <div class="first-container">
+            <div class="header">
+              <h1>Happy First Anniversary</h1>
+            </div>
+            <blockquote>
+              “Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.”
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="countdown-container">
+        <div id="countdown">
+            <div class="countdown-item">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal1">
+            <img src="9.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal2">
+            <img src="5.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal3">
+            <img src="5.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal4">
+            <img src="5.jfif" alt="">
+          </div>  
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal5">
+            <img src="5.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal6">
+            <img src="6.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal7">
+            <img src="7.jfif" alt="">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="image-box" data-toggle="modal" data-target="#modal8">
+            <img src="8.jfif" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="message">Celebrating our first year together as of September 18, 2023</div>
+          <div class="message">One year down, forever to go. Happy Anniversary, my love!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal HTML -->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Image 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Pretty.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Image 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 2.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Image 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 3.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Image 4</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 4.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal5Label">Image 5</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 5.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal6Label">Image 6</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 6.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal7Label">Image 7</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 7.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal8Label">Image 8</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Description for image 8.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flip">
+  <div class="valentines-day-card">
+    <input id="open" type="checkbox">
+    <label class="open" for="open"></label>
+        <div class="card-front">
+            <div class="note">Click to Open!</div>
+        </div>
+        <div class="card-inside">
+            <img src="10.jfif" alt="Valentine's Day Image" class="card-image">
+            <div class="text-one">Your special message goes hereeeewaewewaxewewexqwewqexqweqwexqwqweqwewq!</div>
+            <div class="hearts"></div>
+            <div class="smile"></div>
+            <div class="eyes"></div>
+        </div>
+  </div>
+
+  <div class="valentines-day-card">
+    <input id="open1" type="checkbox">
+    <label class="open" for="open1"></label>
+        <div class="card-front">
+            <div class="note">Click to Open!</div>
+        </div>
+        <div class="card-inside">
+          <video class="card-image1" controls autoplay muted loop>
+            <source src="special.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <div class="text-one">Your special message goes hereeeewaewewaxewewexqwewqexqweqwexqwqweqwewq!</div>
+            <div class="hearts"></div>
+            <div class="smile"></div>
+            <div class="eyes"></div>
+        </div>
+  </div>
+</div>
+
+  <!-- The Beginning Section -->
+<div class="content-section">
+  <h2>The Beginning</h2>
+  <p>Nagsimula ang lahat noong pagkauwi ko galing laro na naganap sa CvSU Indang... 
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#beginningModal">
+          Read More
+      </button>
+  </p>
+</div>
+
+<!-- Our First Date Section -->
+<div class="content-section">
+  <h2>Our First Date</h2>
+  <p>After 1 month, we went to our first date... 
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#firstDateModal">
+          Read More
+      </button>
+  </p>
+</div>
+
+<!-- Milestones Section -->
+<div class="content-section">
+  <h2>Milestones</h2>
+  <p>Sa loob ng isang taon, napakaraming memories na ang nabuo natin... 
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#milestonesModal">
+          Read More
+      </button>
+  </p>
+</div>
+
+<!-- Looking Ahead Section -->
+<div class="content-section">
+  <h2>Looking Ahead</h2>
+  <p>Siguradong mas bibigat at mas kakapit pa tayo sa isa't-isa... 
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#lookingAheadModal">
+          Read More
+      </button>
+  </p>
+</div>
+
+<!-- Modals for each section -->
+<!-- The Beginning Modal -->
+<div class="modal fade" id="beginningModal" tabindex="-1" aria-labelledby="beginningModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="beginningModalLabel">The Beginning</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Nagsimula ang lahat noong pagkauwi ko galing laro na naganap sa CvSU Indang. Nagpapractice ang ilang students sa section namin dahil may gaganaping contest sa aming school, at kasali ka doon. Doon ko unang napansin ang iyong kagandahan. Well, ano pa nga bang magagawa ko, panis po bossing. Lumipas ang mga araw at naikekwento ko na sa aking mga kaibigan ang tungkol sa pagkakaroon ko ng crush sayo, at sa pagbabalak kong kausapin ka.  At dumating ang araw na gumala tayong magkakaklase, litaw na litaw ganda mo non. nakakainis ka! kaya wala na akong magawa at hindi ko na mapigilan ang sarili kong sumubok kausapin ka. Kaya kinabukasan ay minessage na kita sa pamamagitan ng makapangyarihang "Hiiiii kateeeeee!",  and the rest is history.</p>
+              <img src="5.jfif" alt="The Beginning" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Our First Date Modal -->
+<div class="modal fade" id="firstDateModal" tabindex="-1" aria-labelledby="firstDateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="firstDateModalLabel">Our First Date</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>After 1 month, we went to our first date. Kabado pa ako non kasi ilang beses na kita niyaya na lumabas at ilang beses mo akong tinanggihan. hmpppp! tapos pinilit pa kita para lang mangyari ang first date na ito, tinanggihan mo ulit ako tapos humirit lang ako ng isa pa at doon ka lang pumayag! hmpppp! But isa sa pinakamasayang araw ko ang araw na yan, March 26,2023. Dahil kahit simple lang ang naganap, nagsimba, at kumain sa mcdo at simpleng kwentuhan lang, pero doon ko naramdamang gusto mong pakinggan ang kwento ko. At syempre kunyari sobrang galing ko sa kwento ko kasi kailangan bida ako sa isip mo hehehe.</p>
+              <img src="5.jfif" alt="Our First Date" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Milestones Modal -->
+<div class="modal fade" id="milestonesModal" tabindex="-1" aria-labelledby="milestonesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="milestonesModalLabel">Milestones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Sa loob ng isang taon, napakaraming memories na ang nabuo natin. Napakaraming learnings na ang nakuha natin sa isa't-isa, At napakasarap sa pakiramdam alam kong pareho tayo sa kinatatayuan natin pagdating sa pag-ibig. Na hindi lang puro saya, at kilig, kundi may mga pagsubok din talagang magpapatibay, at may mga salita talagang hindi man maganda sa tainga ay kailangan marinig upang mas mamunga tayo bilang sarili natin at bilang tayo. Napakasarap din sa pakiramdam dahil halos lahat ng mga first time ko ay sayo ko naranasan, kaya napakalaking tulong mo talaga sa buhay ko, at higit sa lahat, syempre legal tayo both sides. ;)</p>
+              <img src="5.jfif" alt="Milestones" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Looking Ahead Modal -->
+<div class="modal fade" id="lookingAheadModal" tabindex="-1" aria-labelledby="lookingAheadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="lookingAheadModalLabel">Looking Ahead</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Siguradong mas bibigat at mas kakapit pa tayo sa isa't-isa, at excited akong harapin ang hinaharap kasama ka. For now, ienjoy muna natin kung anong mga limited na bagay ang mga pwede nating gawin, dahil darating din tayo sa araw na hindi na tayo malilimitahan ng mga bagay na ito. Napakarami pa nating i-eexplore at gagawing memories, at tayo ay nasa panimula pa lamang. Napakasarap mong mahalin! Happy Anniversary!</p>
+              <img src="5.jfif" alt="Looking Ahead" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="album">
+  <div class="slider">
+    <span style="--i:1;"><img src="6.jfif" alt=""></span>
+    <span style="--i:2;"><img src="6.jfif" alt=""></span>
+    <span style="--i:3;"><img src="7.jfif" alt=""></span>
+    <span style="--i:4;"><img src="8.jfif" alt=""></span>
+    <span style="--i:5;"><img src="5.jfif" alt=""></span>
+    <span style="--i:6;"><img src="5.jfif" alt=""></span>
+    <span style="--i:7;"><img src="5.jfif" alt=""></span>
+    <span style="--i:8;"><img src="5.jfif" alt=""></span>
+  </div>
+</div>
+
+<div class="album">
+  <div class="slider">
+    <span style="--i:1;"><img src="5.jfif" alt=""></span>
+    <span style="--i:2;"><img src="6.jfif" alt=""></span>
+    <span style="--i:3;"><img src="7.jfif" alt=""></span>
+    <span style="--i:4;"><img src="8.jfif" alt=""></span>
+    <span style="--i:5;"><img src="5.jfif" alt=""></span>
+    <span style="--i:6;"><img src="5.jfif" alt=""></span>
+    <span style="--i:7;"><img src="5.jfif" alt=""></span>
+    <span style="--i:8;"><img src="5.jfif" alt=""></span>
+  </div>
+</div>
+
+<div class="album">
+  <div class="slider">
+    <span style="--i:1;"><img src="6.jfif" alt=""></span>
+    <span style="--i:2;"><img src="6.jfif" alt=""></span>
+    <span style="--i:3;"><img src="7.jfif" alt=""></span>
+    <span style="--i:4;"><img src="8.jfif" alt=""></span>
+    <span style="--i:5;"><img src="5.jfif" alt=""></span>
+    <span style="--i:6;"><img src="5.jfif" alt=""></span>
+    <span style="--i:7;"><img src="5.jfif" alt=""></span>
+    <span style="--i:8;"><img src="5.jfif" alt=""></span>
+  </div>
+</div>
+
+<div class="final-cont">
+<div class="container">
+  <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="heart"></div>
+          <div class="letter">
+              <div class="text">
+                  <strong>Dear Angela Kate</strong>
+                  <p>Walang humpay na pasasalamat po ang sinisigaw ng puso ko sa'yo. Napakasarap sa pakiramdam ng presenya mo, sa mga efforts na ginagawa mo, sa pakikinig mo, hay napakasarap sa pakiramdam. Walang makakatumbas sa kung ano ang pinaparamdam ng presenya mo sa akin, sa kung paano mo ako alagaan, sa kung paano ako natututo sa'yo, nakaka-wow lang talaga. At sana magtuloy-tuloy pa po tayong matuto na magkasama. May mga sari-sarili tayong laban, lalo't papasok na tayo ngayon sa reyalidad na magiging responsable na, at sana magkasama nating matutunan ito. Napakabilis ng panahon kung iisipin, pero napakasarap lang din sa pakiramdam dahil palagi tayong dumadaan sa proseso, na paunti-unti nating inaaral ang isa't-isa. Napakaswerte ko at natagpuan kita :) Mahal na mahal kita, aking sinta!
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                  </p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+<div class="colored">
+  <div class="hehe">weeqwewqeqeqeqwe</div>
+</div>
+ <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+// Select all slider elements
+const sliders = document.querySelectorAll('.slider');
+
+// Add event listener to each slider
+sliders.forEach(slider => {
+    slider.addEventListener('click', () => {
+        // Remove the rotation class from all sliders
+        sliders.forEach(s => s.classList.remove('start-rotation'));
+
+        // Add the rotation class to the clicked slider
+        slider.classList.add('start-rotation');
+    });
+});
+
+const envelopeWrapper = document.querySelector('.envelope-wrapper');
+        envelopeWrapper.addEventListener('click', () => {
+            envelopeWrapper.classList.toggle('flap');
+        });
+
+        const getNextAnniversaryDate = (currentDate) => {
+    const year = currentDate.getFullYear();
+    const nextDate = new Date(`September 18, ${year + 1} 00:00:00`);
+    return nextDate;
+};
+
+const updateCountdown = () => {
+    const now = new Date();
+    let countdownDate;
+
+    if (now.getMonth() === 8 && now.getDate() === 18 && now.getFullYear() > 2024) {
+        countdownDate = getNextAnniversaryDate(now);
+    } else if (now < new Date("2024-09-18T00:00:00")) {
+        countdownDate = new Date("2024-09-18T00:00:00");
+    } else {
+        countdownDate = getNextAnniversaryDate(now);
+    }
+
+    const distance = countdownDate - now;
+
+    if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Happy Anniversary!";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+};
+
+setInterval(updateCountdown, 1000);
+
+
+  </script>
+  
+</body>
+</html>
