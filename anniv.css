@@ -41,7 +41,7 @@ body, html {
 
 .header h1 {
     font-size: 3em;
-    margin: 0;
+    margin: 1;
 }
 
 .header blockquote {
@@ -521,6 +521,10 @@ input#open1 {
     display: none;
 }
 
+input#open2 {
+    display: none;
+}
+
 .valentines-day-card {
     position: relative;
     width: 300px;
@@ -591,6 +595,17 @@ input#open1 {
 
 }
 
+.open2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 7;
+    cursor: pointer;
+
+}
 
 #open:checked ~ .card-front {
     transform: rotateY(-155deg);
@@ -627,6 +642,25 @@ input#open1 {
 }
 
 #open1:checked ~ .card-inside {
+    opacity: 1; /* Show the image when the card is flipped */
+}
+
+#open2:checked ~ .card-front {
+    transform: rotateY(-155deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.13), 30px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+#open2:checked ~ .card-front::before {
+    z-index: 5;
+    background-color: #d04e4e;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.1), 30px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+#open2:checked ~ .card-inside {
     opacity: 1; /* Show the image when the card is flipped */
 }
 
@@ -679,6 +713,13 @@ input#open1 {
     object-fit: cover; /* Ensure the image covers the area */
 }
 
+.card-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+
 .flip {
     display: flex; /* Use flexbox to align cards */
     flex-wrap: wrap; /* Wrap to new lines if needed */
@@ -694,3 +735,300 @@ input#open1 {
     height: 90px;
 }
 
+/* Custom modal content */
+.modal-content.custom-modal {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    animation: glowBorder 2s ease-in-out infinite alternate;
+}
+
+/* Glowing border effect */
+@keyframes glowBorder {
+    from {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Modal header */
+.modal-header {
+    background-color: #ffcc00;
+    border-bottom: none;
+    text-align: center;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.3);
+    animation: pulseHeader 1.5s ease-out infinite;
+}
+
+/* Pulsing effect for modal header */
+@keyframes pulseHeader {
+    0%, 100% {
+        box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: inset 10px 10px 30px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Modal title styling */
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal body styling */
+.modal-body {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Modal footer */
+.modal-footer {
+    border-top: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button styling */
+.btn-secondary {
+    background-color: #b49828;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for buttons */
+.btn-secondary:hover {
+    background-color: #130f10;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Close button */
+.close {
+    color: rgb(155, 19, 19);
+    opacity: 1;
+}
+
+/* Modal open animation */
+.modal.fade .modal-dialog {
+    animation: launchEffect 0.8s ease-out, bounceIn 1s ease-out;
+}
+
+/* Launch effect (like a rocket going up) */
+@keyframes launchEffect {
+    0% {
+        transform: translateY(-300px) scale(0.7) rotate(-10deg);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-30px) scale(1.1);
+        opacity: 0.8;
+    }
+    80% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Bounce effect for the modal dialog */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal background and content container styling */
+.modal-dialog {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    z-index: 1050;
+}
+
+/* Modal Styles */
+.modal-content {
+    background: linear-gradient(145deg, rgba(199, 0, 0, 0.9), rgba(0, 0, 0, 0.8)); /* Dark red-black gradient */
+    color: #fff;
+    border-radius: 20px; /* Smooth rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Deep shadow for depth */
+    position: relative; /* To ensure child element positioning */
+    overflow: hidden; /* Prevent overflow */
+    transform: scale(0.9); /* Initial smaller scale for pop-in effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Add animation when modal appears */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px); /* Start the modal from higher position */
+    opacity: 0;
+    transition: all 0.5s ease; /* Smooth transition on open */
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translateY(0); /* Bring modal to normal position */
+    opacity: 1; /* Make modal fully visible */
+}
+
+/* Modal header */
+.modal-header {
+    background: #dbc467; /* Light red semi-transparent background */
+    border-bottom: none; /* Remove default border */
+    border-radius: 20px 20px 0 0; /* Smooth rounded top corners */
+    text-align: center; /* Center the title */
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Add shadow to make text pop */
+    position: relative;
+    
+}
+
+.modal-header h5 {
+    font-weight: bold;
+    color: #161414;
+}
+
+.modal-header::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 102, 102, 0.6), transparent);
+    border-radius: 50%;
+    animation: glowing 2s infinite alternate;
+}
+
+/* Glowing effect animation */
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px rgba(255, 102, 102, 0.8), 0 0 20px rgba(255, 102, 102, 0.4);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 102, 102, 1), 0 0 30px rgba(255, 102, 102, 0.6);
+    }
+}
+
+/* Modal body */
+.modal-body {
+    padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    position: relative; /* For pseudo-elements */
+}
+
+/* Image inside modal */
+.modal-body img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: transform 0.5s ease; /* Smooth scaling on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.modal-body img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Special glowing effect for modal body */
+.modal-body::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid rgba(255, 0, 0, 0.8); /* Red glowing border */
+    border-radius: 20px; /* Match modal content border-radius */
+    pointer-events: none; /* Avoid interfering with interaction */
+    opacity: 0.5;
+    animation: pulse 2s infinite ease-in-out; /* Pulsing border effect */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+}
+
+/* Modal Close Button */
+.modal-header .btn-close {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.modal-header .btn-close:hover {
+    background-color: #ff0000; /* Bright red on hover */
+    transform: rotate(90deg); /* Rotate close button on hover */
+}
+
+/* Enhanced modal footer (optional) */
+.modal-footer {
+    background: rgba(0, 0, 0, 0.7); /* Dark background for footer */
+    border-top: none;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.image-container {
+    overflow: hidden;
+    height: 0;
+    transition: height 1s ease;
+}
+
+.reveal-image {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.image-container.show {
+    height: auto;
+}
+
+.image-container.show .reveal-image {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+#beginningBtn {
+    background-color: #b69f43;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4);
+    border: none;
+}
