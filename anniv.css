@@ -42,6 +42,8 @@ body, html {
 .header h1 {
     font-size: 3em;
     margin: 1;
+    color: #b38f02;
+    font-weight: 800;
 }
 
 .header blockquote {
@@ -105,6 +107,8 @@ body, html {
     margin: 20px 0;
     font-style: italic;
     padding-left: 20px;
+    color: #b38f02;
+    font-weight: 800;
 }
 
 /* Style for content sections */
@@ -118,7 +122,7 @@ body, html {
     overflow: hidden; /* To ensure no overflow from child elements */
     backdrop-filter: blur(10px); /* Blurred background effect for a frosted glass look */
     border-left: 9px solid#b38f02; /* Add a left border */
-    
+    font-weight: 550;
    
 }
 
@@ -151,6 +155,8 @@ body, html {
     color: #e46e6e; /* White color for the headings */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow for better readability */
     letter-spacing: 1px; /* Slightly spaced out letters for a stylish effect */
+    color: #b38f02;
+    font-weight: 550;
 }
 
 .content-section p {
