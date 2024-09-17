@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
     <!-- Bootstrap 5 CSS from CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -586,6 +588,48 @@ var video = document.querySelector('.card-image2');
           });
       });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const playCelebration = () => {
+        // Trigger confetti
+        const duration = 5 * 1000; // 5 seconds
+        const end = Date.now() + duration;
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+        
+        (function frame() {
+            confetti({
+                particleCount: 5,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: colors
+            });
+            confetti({
+                particleCount: 5,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: colors
+            });
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        })();
+        
+        // Play sound effect
+        const audio = new Audio('party-whistle-being-blown-79410.mp3'); // Update the path to your sound file
+        audio.play();
+    };
+
+    const checkAnniversary = () => {
+        const now = new Date();
+        if (now.getMonth() === 8 && now.getDate() === 18) { // September 18
+            playCelebration();
+        }
+    };
+
+    checkAnniversary();
+});
 
   </script>
   
